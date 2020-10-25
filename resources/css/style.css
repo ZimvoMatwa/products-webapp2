@@ -76,6 +76,11 @@ input[type=submit] {
 
 section {
     padding: 80px 0;
+    background-image: linear-gradient(rgba(117, 76, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/images.jpg);
+    background-color: #f4f4f4;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed
 }
 
 .box {
@@ -113,15 +118,6 @@ h3 {
     font-size: 110%;
     margin-bottom: 15%;
     letter-spacing: 1px;
-}
-
-h2:after {
-    display: block;
-    height: 2px;
-    background-color: #6821eb;
-    content: " ";
-    width: 100px;
-    margin: 30px auto 0px auto;
 }
 
 
@@ -200,7 +196,11 @@ header {
 
 .contact-form {
     width: 60%;
-    margin: 0 auto;
+    margin: 50px auto;
+    background-image: linear-gradient(rgba(117, 76, 0, 0), rgba(0, 0, 0, 0)), url(img/images.jpg);
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-attachment: fixed
 }
 
 input[type=text],
@@ -286,4 +286,97 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+
+/* CATALOGUE */
+
+.catalogue {
+    background-image: linear-gradient(rgba(117, 76, 0, 0), rgba(0, 0, 0, 0)), url(img/images.jpg);
+    background-color: #f4f4f4;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed
+}
+
+.catalogue-header {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 5%;
+    -webkit-box-shadow: 0/*this is the x-axis*/
+    2px/*this is the y-axis*/
+    2px/*this is the blur*/
+    #efefef;
+    box-shadow: 0/*this is the x-axis*/
+    2px/*this is the y-axis*/
+    2px/*this is the blur*/
+    #efefef;
+}
+
+.package-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.package-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.package-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.packages,
+h3 {
+    background-color: lavenderblush;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.package-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #c99465dc;
+}
+
+.package-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.package-inclusives {
+    font-size: 80%;
+}
+
+.package-box ul {
+    list-style: none;
+}
+
+.package-box ul li {
+    padding: 5px 0;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding-top: 100px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    width: 100%;
+}
+
+.contact,
+h3 {
+    text-align: center;
 }
