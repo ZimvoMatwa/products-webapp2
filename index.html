@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nandi's Emporium</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+</head>
+
+<body>
+
+    <form action="/" method="POST">
+        <header>
+            <nav>
+                <div class="row">
+                    <a href="index.html"><img src="resources/img/logo.png" alt="Nandi's Emporium" class="logo"></a>
+                    <img src="resources/img/logo.png" alt="Nandi's Emporium" class="logo-black">
+                    <ul class="main-nav js-main-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Enquiries</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js-nav-icon"><i class="ion-toggle"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1 class="heading">Welcome to Nandi's Clothing Emporium</h1>
+                <a class="btn btn-full js-scroll-to-section-projects" href="#">Shop</a>
+                <a class="btn btn-ghost js-scroll-to-section-packages" href="#">Who we are</a>
+            </div>
+
+        </header>
+
+
+
+        <h2>Make your statement</h2>
+        <table style="width:100%" class="table">
+
+            <tr>
+                <th>Tops</th>
+                <th>Dresses</th>
+                <th>T-shirts</th>
+                <th>Pants</th>
+                <th>Shoes</th>
+                {{!--
+                <th>Hats</th> --}}
+            </tr>
+            <tr>
+                <td><img class="clothing" src="resources/img/top2.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/dress1.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/t-shirt3.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/pant1.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/shoe1.jpg"><br> <button>Add to chart</button></td>
+            </tr>
+            <tr>
+                <td><img class="clothing" src="resources/img/top3.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/dress2.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/t-shirt1.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/pant2.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/shoe2.jpg"><br> <button>Add to chart</button></td>
+
+            </tr>
+            <tr>
+                <td><img class="clothing" src="resources/img/top4.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/dress3.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/t-shirt2.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/pant3.jpg"><br> <button>Add to chart</button></td>
+                <td><img class="clothing" src="resources/img/shoe3.jpg"><br> <button>Add to chart</button></td>
+
+            </tr>
+
+        </table>
+
+        <br> <br>
+        <section class="section-form" id="contact" id="form">
+            <div class="row">
+                <h2>not sure what this is for</h2>
+            </div>
+            <div class="row">
+                <form class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row">
+                <div class="col span-1-of-3">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+            </div> -->
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="lname" name="lname" id="lname" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">Age</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="age" id="age">
+                        <option value="friends" selected>18</option>
+                        <option value="friends" selected>19</option>
+                        <option value="friends" selected>20</option>
+                        <option value="friends" selected>21</option>
+                        <option value="friends" selected>22</option>
+                        <option value="friends" selected>23</option>
+                        <option value="friends" selected>24</option>
+                        <option value="friends" selected>25</option>
+                        <option value="friends" selected>26</option>
+                    </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Note</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Leave any special requests here."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <a href="payment.html"><input type="submit" value="Get Bill" name="button"></a>
+                        </div>
+                    </div>
+                </form>
+
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#aboutus">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by Sino. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+    </form>
+</body>
